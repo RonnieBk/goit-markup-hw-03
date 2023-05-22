@@ -18,7 +18,7 @@ body {
   text-decoration: none;
   letter-spacing: 0.03em;
 }
-footer > a.logo {
+footer a.logo {
   color: #fff;
 }
 .logo > span {
@@ -52,7 +52,7 @@ footer > a.logo {
   background-color: #2f303a;
 }
 
-header > .contact {
+header .contact {
   text-decoration: none;
   font-size: 14px;
   color: var(--secondary-color);
@@ -92,7 +92,44 @@ header > .contact {
   color: #fff;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 0;
+}
+
+.section {
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.main-headline.container {
+  padding: 200px 0;
+}
+
+.main-headline .headline {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.main-headline .button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 200px;
+  text-align: center;
+}
+
+.introduction.container {
+  padding-top: 94px;
+}
+.introduction-text {
+  padding-left: 0;
+}
 .introduction-text li {
+  display: inline-block;
+  margin: 0 15px;
+  max-width: 270px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -100,9 +137,19 @@ header > .contact {
   text-transform: uppercase;
   color: var(--main-color);
 }
-.text {
+.introduction-text li:first-child {
+  margin-left: 0;
+}
+
+.introduction-text li:last-child {
+  margin-right: 0;
+}
+
+.introduction-text .text {
+  margin-top: 10px;
+  margin-bottom: 0;
   font-weight: 400;
-  line-height: 1.71;
+  line-height: 1.7;
   text-transform: none;
   color: var(--secondary-color);
 }
