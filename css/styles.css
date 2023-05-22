@@ -95,6 +95,7 @@ header .contact {
 .container {
   width: 1200px;
   padding-left: 0;
+  margin: 0 auto;
 }
 
 .section {
@@ -103,7 +104,11 @@ header .contact {
   padding-bottom: 94px;
 }
 
-.main-headline.container {
+.headline {
+  margin: 0;
+}
+
+.main-headline {
   padding: 200px 0;
 }
 
@@ -123,12 +128,10 @@ header .contact {
 .introduction.container {
   padding-top: 94px;
 }
-.introduction-text {
-  padding-left: 0;
+.introduction-text.list {
+  margin: 0;
 }
 .introduction-text li {
-  display: inline-block;
-  margin: 0 15px;
   max-width: 270px;
   font-weight: 700;
   font-size: 14px;
@@ -137,21 +140,40 @@ header .contact {
   text-transform: uppercase;
   color: var(--main-color);
 }
-.introduction-text li:first-child {
-  margin-left: 0;
-}
 
-.introduction-text li:last-child {
-  margin-right: 0;
+.text {
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .introduction-text .text {
-  margin-top: 10px;
-  margin-bottom: 0;
   font-weight: 400;
   line-height: 1.7;
   text-transform: none;
   color: var(--secondary-color);
+}
+
+figure {
+  margin: 0;
+}
+
+.list {
+  padding: 0;
+  margin: 50px 0 0 0;
+}
+
+.list li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.list li:first-child {
+  margin-left: 0;
+}
+
+.list li:last-child {
+  margin-right: 0;
 }
 
 .pictures .title {
@@ -166,6 +188,10 @@ header .contact {
   font-weight: 400;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+.section.team-members {
+  background-color: #f5f4fa;
 }
 
 .team-members .title {
@@ -188,7 +214,12 @@ header .contact {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+
+.address .email {
+  margin: 9px 0;
+}
 .address > .contact {
+  display: block;
   color: rgba(255, 255, 255, 0.6);
 }
 .address > .phone-number {
@@ -200,5 +231,11 @@ header .contact {
 }
 
 footer {
+  padding: 60px 0;
   background-color: #2f303a;
+  margin: 0;
+}
+footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
 }
